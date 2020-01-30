@@ -13077,7 +13077,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Distortion-Metrics-used-in-Digital-Image-Compression">Distortion Metrics used in Digital Image Compression<a class="anchor-link" href="#Distortion-Metrics-used-in-Digital-Image-Compression">&#182;</a></h1>
+<h1 id="Distortion-Metrics-used-in-Digital-Image-Compression"><a href="https://github.com/vicente-gonzalez-ruiz/distortion_metrics">Distortion Metrics used in Digital Image Compression</a><a class="anchor-link" href="#Distortion-Metrics-used-in-Digital-Image-Compression">&#182;</a></h1>
 </div>
 </div>
 </div>
@@ -13101,7 +13101,8 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Root-MSE-(RMSE)"><a href="https://en.wikipedia.org/wiki/Root-mean-square_deviation">Root MSE (RMSE)</a><a class="anchor-link" href="#Root-MSE-(RMSE)">&#182;</a></h2>\begin{equation}
+<h2 id="Root-MSE-(RMSE)"><a href="https://en.wikipedia.org/wiki/Root-mean-square_deviation">Root MSE (RMSE)</a><a class="anchor-link" href="#Root-MSE-(RMSE)">&#182;</a></h2><p>Defined as:</p>
+\begin{equation}
 \text{RMSE}(x,y) = \sqrt{\text{MSE}(x,y)}
 \end{equation}<p>where:</p>
 <ul>
@@ -13116,7 +13117,8 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Signal-to-Noise-Ratio-(SNR)"><a href="https://en.wikipedia.org/wiki/Signal-to-noise_ratio">Signal to Noise Ratio (SNR)</a><a class="anchor-link" href="#Signal-to-Noise-Ratio-(SNR)">&#182;</a></h2>\begin{equation}
+<h2 id="Signal-to-Noise-Ratio-(SNR)"><a href="https://en.wikipedia.org/wiki/Signal-to-noise_ratio">Signal to Noise Ratio (SNR)</a><a class="anchor-link" href="#Signal-to-Noise-Ratio-(SNR)">&#182;</a></h2><p>Defined by:</p>
+\begin{equation}
 \text{SNR}(x,y) = 10\log_{10}\frac{\sigma^2}{\text{MSE}(x,y)}
 \end{equation}<p>where
 $\sigma$ is the variance of $x$.</p>
@@ -13128,7 +13130,8 @@ $\sigma$ is the variance of $x$.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Peak-Signal-to-Noise-Ratio-(PSNR)"><a href="https://en.wikipedia.org/wiki/Peak_signal-to-noise_ratio">Peak Signal to Noise Ratio (PSNR)</a><a class="anchor-link" href="#Peak-Signal-to-Noise-Ratio-(PSNR)">&#182;</a></h2>\begin{equation}
+<h2 id="Peak-Signal-to-Noise-Ratio-(PSNR)"><a href="https://en.wikipedia.org/wiki/Peak_signal-to-noise_ratio">Peak Signal to Noise Ratio (PSNR)</a><a class="anchor-link" href="#Peak-Signal-to-Noise-Ratio-(PSNR)">&#182;</a></h2><p>Defined as:</p>
+\begin{equation}
 \text{PSNR}(x,y) = 10\log_{10}\frac{p^2}{\text{MSE}(x,y)}
 \end{equation}<p>where
 $p$ is the peak value of the signal (typically $255$ or $65535$, depending on the <a href="https://en.wikipedia.org/wiki/Color_depth">number of bits per pixel</a> of $x$ and $y$).</p>
@@ -13140,7 +13143,8 @@ $p$ is the peak value of the signal (typically $255$ or $65535$, depending on th
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Structure-Similarity-Index-Method-(SSIM)"><a href="https://en.wikipedia.org/wiki/Structural_similarity">Structure Similarity Index Method (SSIM)</a><a class="anchor-link" href="#Structure-Similarity-Index-Method-(SSIM)">&#182;</a></h2>\begin{equation}
+<h2 id="Structure-Similarity-Index-Method-(SSIM)"><a href="https://en.wikipedia.org/wiki/Structural_similarity">Structure Similarity Index Method (SSIM)</a><a class="anchor-link" href="#Structure-Similarity-Index-Method-(SSIM)">&#182;</a></h2><p>Defined by:</p>
+\begin{equation}
 \hbox{SSIM}(x,y) = \frac{(2\mu_x\mu_y + c_1)(2\sigma_{xy} + c_2)}{(\mu_x^2 + \mu_y^2 + c_1)(\sigma_x^2 + \sigma_y^2 + c_2)}
 \end{equation}<p>where:</p>
 <ul>
@@ -13159,7 +13163,8 @@ $p$ is the peak value of the signal (typically $255$ or $65535$, depending on th
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Pearson-Correlation-Coefficient-(PCC)"><a href="https://en.wikipedia.org/wiki/Pearson_correlation_coefficient">Pearson Correlation Coefficient (PCC)</a><a class="anchor-link" href="#Pearson-Correlation-Coefficient-(PCC)">&#182;</a></h2>\begin{equation}
+<h2 id="Pearson-Correlation-Coefficient-(PCC)"><a href="https://en.wikipedia.org/wiki/Pearson_correlation_coefficient">Pearson Correlation Coefficient (PCC)</a><a class="anchor-link" href="#Pearson-Correlation-Coefficient-(PCC)">&#182;</a></h2><p>Defined as:</p>
+\begin{equation}
 \hbox{PCC}(x,y) = \frac{\sigma_{xy}}{\sigma_x \sigma_y}
 \end{equation}<p>where:</p>
 <ul>
@@ -13307,7 +13312,7 @@ $p$ is the peak value of the signal (typically $255$ or $65535$, depending on th
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.image.AxesImage at 0x7fc2503518b0&gt;</pre>
+<pre>&lt;matplotlib.image.AxesImage at 0x7fb7707db580&gt;</pre>
 </div>
 
 </div>
@@ -13414,7 +13419,7 @@ $p$ is the peak value of the signal (typically $255$ or $65535$, depending on th
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.image.AxesImage at 0x7fc2311d4940&gt;</pre>
+<pre>&lt;matplotlib.image.AxesImage at 0x7fb758e46c10&gt;</pre>
 </div>
 
 </div>
@@ -13462,7 +13467,7 @@ $p$ is the peak value of the signal (typically $255$ or $65535$, depending on th
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.image.AxesImage at 0x7fc2726ff220&gt;</pre>
+<pre>&lt;matplotlib.image.AxesImage at 0x7fb7921fa220&gt;</pre>
 </div>
 
 </div>
